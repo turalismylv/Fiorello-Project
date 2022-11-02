@@ -286,7 +286,7 @@ namespace fiorello_project.Areas.Admin.Controllers
                 CategoryId = product.CategoryId,
                 Status = product.Status,
                 MainPhotoName = product.MainPhotoName,
-                ProductPhotos = product.ProductPhotos,
+                ProductPhotos=product.ProductPhotos,
 
 
 
@@ -317,7 +317,7 @@ namespace fiorello_project.Areas.Admin.Controllers
 
             var product = await _appDbContext.Products.Include(p => p.ProductPhotos).FirstOrDefaultAsync(p => p.Id == id);
 
-            model.ProductPhotos = product.ProductPhotos.ToList();
+            //model.ProductPhotos = product.ProductPhotos.ToList();
 
 
 
@@ -332,15 +332,7 @@ namespace fiorello_project.Areas.Admin.Controllers
             }
 
 
-            product.Title = model.Title;
-            product.Price = model.Price;
-            product.Description = model.Description;
-            product.Quantity = model.Quantity;
-            product.Weight = model.Weight;
-            product.Dimenesion = model.Dimenesion;
-            product.Status = model.Status;
-
-            model.MainPhotoName = product.MainPhotoName;
+           
 
             if (model.MainPhoto != null)
             {
@@ -356,16 +348,14 @@ namespace fiorello_project.Areas.Admin.Controllers
                     return View(model);
                 }
 
-                _fileService.Delete(model.MainPhotoName, _webHostEnvironment.WebRootPath);
+                _fileService.Delete(product.MainPhotoName, _webHostEnvironment.WebRootPath);
                 product.MainPhotoName = await _fileService.UploadAsync(model.MainPhoto, _webHostEnvironment.WebRootPath);
             }
 
-            var category = await _appDbContext.Categories.FindAsync(model.CategoryId);
-            if (category == null) return NotFound();
-            product.CategoryId = category.Id;
+           
 
 
-            await _appDbContext.SaveChangesAsync();
+           
 
 
             bool hasError = false;
@@ -388,23 +378,36 @@ namespace fiorello_project.Areas.Admin.Controllers
 
                 if (hasError) { return View(model); }
 
-                int order = 1;
+                int order = product.ProductPhotos.OrderByDescending(pp=>pp.Order).FirstOrDefault().Order;
                 foreach (var photo in model.Photos)
                 {
                     var productPhoto = new ProductPhoto
                     {
                         Name = await _fileService.UploadAsync(photo, _webHostEnvironment.WebRootPath),
-                        Order = order,
+                        Order = ++order,
                         ProductId = product.Id
                     };
                     await _appDbContext.productPhotos.AddAsync(productPhoto);
                     await _appDbContext.SaveChangesAsync();
 
-                    order++;
+                    
                 }
             }
+            product.Title = model.Title;
+            product.Price = model.Price;
+            product.Description = model.Description;
+            product.Quantity = model.Quantity;
+            product.Weight = model.Weight;
+            product.Dimenesion = model.Dimenesion;
+            product.Status = model.Status;
 
+            model.MainPhotoName = product.MainPhotoName;
 
+            var category = await _appDbContext.Categories.FindAsync(model.CategoryId);
+            if (category == null) return NotFound();
+            product.CategoryId = category.Id;
+
+            await _appDbContext.SaveChangesAsync();
             return RedirectToAction("Index");
 
             #endregion
