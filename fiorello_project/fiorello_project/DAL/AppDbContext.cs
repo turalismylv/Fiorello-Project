@@ -20,5 +20,7 @@ namespace fiorello_project.DAL
         public DbSet<HomeMainSlider> HomeMainSliders { get; set; }
 
         public DbSet<HomeMainSliderPhoto> HomeMainSliderPhotos { get; set; }
+
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

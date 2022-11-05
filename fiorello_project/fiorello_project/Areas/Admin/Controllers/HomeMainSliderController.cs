@@ -253,8 +253,8 @@ namespace fiorello_project.Areas.Admin.Controllers
                 }
 
                 if (hasError) { return View(model); }
-
-                int order = homeMainSlider.HomeMainSliderPhotos.OrderByDescending(hs => hs.Order).FirstOrDefault().Order;
+                var homeMainSliderPhoto = homeMainSlider.HomeMainSliderPhotos.OrderByDescending(hs => hs.Order).FirstOrDefault();
+                int order = homeMainSliderPhoto != null ? homeMainSliderPhoto.Order : 0;
                 foreach (var photo in model.Photos)
                 {
                     var productPhoto = new HomeMainSliderPhoto

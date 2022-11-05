@@ -323,7 +323,7 @@ namespace fiorello_project.Areas.Admin.Controllers
 
             if (product == null) return NotFound();
 
-            bool isExits = await _appDbContext.Products.AnyAsync(p => p.Title.ToLower().Trim() == product.Title.ToLower().Trim() && p.Id != product.Id);
+            bool isExits = await _appDbContext.Products.AnyAsync(p => p.Title.ToLower().Trim() == model.Title.ToLower().Trim() && p.Id != model.Id);
 
             if (isExits)
             {
