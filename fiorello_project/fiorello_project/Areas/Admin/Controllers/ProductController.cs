@@ -317,7 +317,7 @@ namespace fiorello_project.Areas.Admin.Controllers
 
             var product = await _appDbContext.Products.Include(p => p.ProductPhotos).FirstOrDefaultAsync(p => p.Id == id);
 
-            //model.ProductPhotos = product.ProductPhotos.ToList();
+            model.ProductPhotos = product.ProductPhotos.ToList();
 
 
 

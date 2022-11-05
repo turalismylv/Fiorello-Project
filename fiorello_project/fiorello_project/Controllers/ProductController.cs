@@ -19,11 +19,32 @@ namespace fiorello_project.Controllers
 
             var model = new ProductIndexViewModel
             {
-                Products = await _appDbContext.Products.OrderByDescending(p=>p.Id).ToListAsync()
+                Products = await _appDbContext.Products.OrderByDescending(p=>p.Id).Take(4).ToListAsync()
             };
 
             
             return View(model);
+        }
+
+        public async Task<IActionResult> LoadMore(int skipRow)
+        {
+
+            bool isLast = false;
+            var product = await _appDbContext.Products.OrderByDescending(p => p.Id).Skip(3 * skipRow).Take(4).ToListAsync();
+
+            if ((3*skipRow)+3>=_appDbContext.Products.Count())
+            {
+                isLast = true;
+            }
+
+            var model = new ProductLoadMoreViewModel
+            {
+                Products = product,
+                Islast = isLast
+            };
+
+            return PartialView("_ProductPartial", model);
+           
         }
         public async Task<IActionResult> Details(int id)
         {

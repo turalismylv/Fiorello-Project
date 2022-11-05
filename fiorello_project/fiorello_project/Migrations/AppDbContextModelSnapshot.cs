@@ -38,6 +38,109 @@ namespace fiorello_project.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("fiorello_project.Models.Expert", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Experts");
+                });
+
+            modelBuilder.Entity("fiorello_project.Models.FaqPage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("FaqPages");
+                });
+
+            modelBuilder.Entity("fiorello_project.Models.HomeMainSlider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SubPhotoName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("HomeMainSliders");
+                });
+
+            modelBuilder.Entity("fiorello_project.Models.HomeMainSliderPhoto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("HomeMainSliderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Order")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HomeMainSliderId");
+
+                    b.ToTable("HomeMainSliderPhotos");
+                });
+
             modelBuilder.Entity("fiorello_project.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -110,6 +213,17 @@ namespace fiorello_project.Migrations
                     b.ToTable("productPhotos");
                 });
 
+            modelBuilder.Entity("fiorello_project.Models.HomeMainSliderPhoto", b =>
+                {
+                    b.HasOne("fiorello_project.Models.HomeMainSlider", "HomeMainSlider")
+                        .WithMany("HomeMainSliderPhotos")
+                        .HasForeignKey("HomeMainSliderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HomeMainSlider");
+                });
+
             modelBuilder.Entity("fiorello_project.Models.Product", b =>
                 {
                     b.HasOne("fiorello_project.Models.Category", "Category")
@@ -135,6 +249,11 @@ namespace fiorello_project.Migrations
             modelBuilder.Entity("fiorello_project.Models.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("fiorello_project.Models.HomeMainSlider", b =>
+                {
+                    b.Navigation("HomeMainSliderPhotos");
                 });
 
             modelBuilder.Entity("fiorello_project.Models.Product", b =>

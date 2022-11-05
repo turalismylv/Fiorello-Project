@@ -14,5 +14,11 @@ namespace fiorello_project.DAL
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductPhoto> productPhotos { get; set; }
+
+        public DbSet<Expert> Experts { get; set; }
+        public DbSet<FaqPage> FaqPages { get; set; }
+        public DbSet<HomeMainSlider> HomeMainSliders { get; set; }
+
+        public DbSet<HomeMainSliderPhoto> HomeMainSliderPhotos { get; set; }
     }
 }
