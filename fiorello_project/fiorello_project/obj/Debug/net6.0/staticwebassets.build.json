@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AEkz9G20oYROF9kOp532d146tkkXqcqVs2MGGZkIlxQ=",
+  "Hash": "QiXiiJkcGsnLNzw6iT8n8MR9bUe7nzaOzaZEF8Hxkgw=",
   "Source": "fiorello_project",
   "BasePath": "_content/fiorello_project",
   "Mode": "Default",
@@ -1632,6 +1632,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\1836f935-6057-4ae9-8f4f-05683756f225_shop-14-img.jpg"
     },
     {
+      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\18eb8a7a-6d05-41a3-a549-533b612b301b_Emil 1.jpg",
+      "SourceId": "fiorello_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
+      "BasePath": "_content/fiorello_project",
+      "RelativePath": "assets/img/18eb8a7a-6d05-41a3-a549-533b612b301b_Emil 1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\18eb8a7a-6d05-41a3-a549-533b612b301b_Emil 1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\1e8c13dd-69a9-419b-b98e-aff8609d4c9d_shop-3-img.jpg",
       "SourceId": "fiorello_project",
       "SourceType": "Discovered",
@@ -2244,6 +2261,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\8a9c66ca-4a49-4190-9a12-6f8bd91df482_shop-2-img-300x400.jpg"
     },
     {
+      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\8d334895-6475-4d65-a2b6-dae193f3e29e_Mirgubad.jpeg",
+      "SourceId": "fiorello_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
+      "BasePath": "_content/fiorello_project",
+      "RelativePath": "assets/img/8d334895-6475-4d65-a2b6-dae193f3e29e_Mirgubad.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\8d334895-6475-4d65-a2b6-dae193f3e29e_Mirgubad.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\9a6eeb18-18e2-4d26-a885-41b2233087f2_WIN_20221010_17_23_13_Pro.jpg",
       "SourceId": "fiorello_project",
       "SourceType": "Discovered",
@@ -2480,6 +2514,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\b4e8a334-fadb-42d0-a39f-282f0bc130fc_shop-8-gallery-3-300x400.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\bb97da2d-bcbf-47a3-bf58-a0db6679b6e2_baylar.jpeg",
+      "SourceId": "fiorello_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
+      "BasePath": "_content/fiorello_project",
+      "RelativePath": "assets/img/bb97da2d-bcbf-47a3-bf58-a0db6679b6e2_baylar.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\bb97da2d-bcbf-47a3-bf58-a0db6679b6e2_baylar.jpeg"
     },
     {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\be639318-1a39-4634-bf12-0a2238014973_tural.jpg",
@@ -2771,23 +2822,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\f5626e4c-1747-4eef-a3f3-451e8575e31d_shop-8-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\f5c80c1d-5b5e-40d6-a051-7ae43111ef83_tural.jpg",
-      "SourceId": "fiorello_project",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
-      "BasePath": "_content/fiorello_project",
-      "RelativePath": "assets/img/f5c80c1d-5b5e-40d6-a051-7ae43111ef83_tural.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\f5c80c1d-5b5e-40d6-a051-7ae43111ef83_tural.jpg"
-    },
-    {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\f715a612-1c12-4d29-bf53-34dc04afeb54_shop-4-img-300x400.jpg",
       "SourceId": "fiorello_project",
       "SourceType": "Discovered",
@@ -2803,6 +2837,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\f715a612-1c12-4d29-bf53-34dc04afeb54_shop-4-img-300x400.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\f7178f37-2789-4f1c-a70c-1a26714caec0_h3-slider-background.jpg",
+      "SourceId": "fiorello_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
+      "BasePath": "_content/fiorello_project",
+      "RelativePath": "assets/img/f7178f37-2789-4f1c-a70c-1a26714caec0_h3-slider-background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\f7178f37-2789-4f1c-a70c-1a26714caec0_h3-slider-background.jpg"
     },
     {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\img\\f9481640-7e6b-490f-a6d2-c75a1253223e_tural.jpg",

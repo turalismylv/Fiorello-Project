@@ -6,6 +6,7 @@ namespace fiorello_project.Models
     {
         public int Id { get; set; }
         [Required]
+        
         public string Title { get; set; }
 
         public List<Product> Products { get; set; }

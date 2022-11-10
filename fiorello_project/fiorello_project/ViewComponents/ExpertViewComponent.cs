@@ -15,7 +15,11 @@ namespace fiorello_project.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var experts = await _appDbContext.Experts.ToListAsync();
+
+
             return View(experts);
+
         }
+
     }
 }

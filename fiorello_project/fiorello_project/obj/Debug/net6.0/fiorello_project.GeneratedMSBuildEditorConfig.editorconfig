@@ -155,8 +155,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tursl/OneDrive/Desktop/CODEACADEMY/HomeWorks/FIORELLO_project/fiorello_project/fiorello_project/Views/MyAccount/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XEluZGV4LmNzaHRtbA==
+[C:/Users/tursl/OneDrive/Desktop/CODEACADEMY/HomeWorks/FIORELLO_project/fiorello_project/fiorello_project/Views/MyAccount/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tursl/OneDrive/Desktop/CODEACADEMY/HomeWorks/FIORELLO_project/fiorello_project/fiorello_project/Views/MyAccount/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tursl/OneDrive/Desktop/CODEACADEMY/HomeWorks/FIORELLO_project/fiorello_project/fiorello_project/Views/Product/Details.cshtml]

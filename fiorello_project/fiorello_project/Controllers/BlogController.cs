@@ -13,6 +13,7 @@ namespace fiorello_project.Controllers
         {
             _appDbContext = appDbContext;
         }
+
         public async Task<IActionResult> Index()
         {
             var model = new BlogIndexViewModel

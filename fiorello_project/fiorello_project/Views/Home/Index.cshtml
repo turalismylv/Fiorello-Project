@@ -17,22 +17,22 @@
 
                                     @foreach (var photo in Model.HomeMainSlider.HomeMainSliderPhotos)
                                     {
-                                    <rs-slide style="position: absolute;"
+                                        <rs-slide style="position: absolute;"
                                               data-key="rs-5" data-title="Slide"
                                               data-thumb="assets/img/@photo.Name"
                                               data-anim="adpr:false;" data-p1="01">
-                                        <img style="width:200px; height:200px" src="assets/img/@photo.Name"
+                                            <img style="width:200px; height:200px" src="assets/img/@photo.Name"
                                              alt="s" title="Main Home"
                                              class="rev-slidebg tp-rs-img rs-lazyload"
                                              data-lazyload="assets/img/@photo.Name"
                                              data-bg="p:center right;"
                                              data-panzoom="d:10000;ss:110;se:100;"
                                              data-no-retina>
-                                    </rs-slide>
-                                        
+                                        </rs-slide>
+
                                     }
-                                    
-                                    
+
+
                                 </rs-slides>
                                 <rs-static-layers class="rs-stl-visible">
                                     <rs-layer id="slider-3-slide-3-layer-17"
@@ -119,9 +119,9 @@
                                 </div>
                                 <div class="mkdf-pl-outer mkdf-outer-space">
 
-                                        @foreach (var product in Model.Products)
-                                        {
-                                    <div class="mkdf-pli mkdf-item-space ">
+                                    @foreach (var product in Model.Products)
+                                    {
+                                        <div class="mkdf-pli mkdf-item-space ">
                                             <div class="mkdf-pli-inner">
                                                 <div class="mkdf-pli-image">
                                                     <img width="620" height="800"
@@ -138,9 +138,9 @@
                                                 <h6 itemprop="name"
                                                 class="entry-title mkdf-pli-title">
                                                     <a itemprop="url"
-                                                  asp-action="details" asp-controller="product" asp-route-id="@product.Id" >
+                                                   asp-action="details" asp-controller="product" asp-route-id="@product.Id">
 
-                                                       @product.Title
+                                                        @product.Title
 
                                                     </a>
                                                 </h6>
@@ -167,13 +167,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        }
+                                    }
 
 
-                                   
-                                   
-                                   
-                                  
+
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -310,7 +310,7 @@
             </div>
         </div>
     </div>
-        @await Component.InvokeAsync("Expert")
+    @await Component.InvokeAsync("Expert")
     <div class="mkdf-row-grid-section-wrapper mkdf-parallax-row-holder mkdf-content-aligment-center"
          data-parallax-bg-image=https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/h3-background-img.jpg
          data-parallax-bg-speed=1>
