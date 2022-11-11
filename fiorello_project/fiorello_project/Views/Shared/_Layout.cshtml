@@ -1343,13 +1343,13 @@ class="mkdf-woo-single-page home page-template page-template-full-width page-tem
 
 				 					         @if (User.Identity.IsAuthenticated)
                                               {
-                                                                 <div>
-                                                            <h6>@User.Identity.Name</h6>
-                                                            </div>
-                                                            <div>
+                                                               
+                                                            <span>@User.Identity.Name</span>
+                                                            
+                                                           
                                                          
 														 <button type="button" class="btn btn-warning"><a asp-action="logout" asp-controller="account">Logout</a></button>
-                                               </div>
+                                             
                                             }
               
 								</div>
