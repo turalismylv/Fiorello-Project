@@ -2,12 +2,14 @@
 using fiorello_project.DAL;
 using fiorello_project.Helpers;
 using fiorello_project.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace fiorello_project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ExpertController : Controller
     {
         private readonly AppDbContext _appDbContext;

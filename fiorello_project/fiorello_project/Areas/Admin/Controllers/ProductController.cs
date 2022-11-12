@@ -3,6 +3,7 @@ using fiorello_project.Areas.Admin.ViewModels.Product.ProductPhoto;
 using fiorello_project.DAL;
 using fiorello_project.Helpers;
 using fiorello_project.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 namespace fiorello_project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class ProductController : Controller
     {
         private readonly AppDbContext _appDbContext;

@@ -16,10 +16,7 @@ namespace fiorello_project.ViewComponents
         {
             var experts = await _appDbContext.Experts.ToListAsync();
 
-
             return View(experts);
-
         }
-
     }
 }

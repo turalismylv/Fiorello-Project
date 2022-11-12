@@ -1,4 +1,5 @@
-﻿using fiorello_project.Models;
+﻿using fiorello_project.Attributes;
+using fiorello_project.Models;
 using fiorello_project.ViewModels.MyAccount;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,8 +8,8 @@ namespace fiorello_project.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly UserManager<User> _userManager; //user yaratmaq ucundur
+        private readonly SignInManager<User> _signInManager; // userin login olmasi ucundur
 
         public AccountController(UserManager<User> userManager,
             SignInManager<User> signInManager)
@@ -16,8 +17,15 @@ namespace fiorello_project.Controllers
             _userManager = userManager;
             _signInManager = signInManager;
         }
+
+        [OnlyAnonymous]
         public IActionResult Register()
         {
+            //if (User.Identity.IsAuthenticated)
+            //{
+            //    return RedirectToAction("index", "Home");
+            //}
+
             return View();
         }
 
@@ -48,6 +56,7 @@ namespace fiorello_project.Controllers
         }
 
         [HttpGet]
+        [OnlyAnonymous]
         public async Task<IActionResult> Login()
         {
             return View();
@@ -71,18 +80,23 @@ namespace fiorello_project.Controllers
                 ModelState.AddModelError(string.Empty, "Username or Password is incorrect");
                 return View(model);
             }
-            return RedirectToAction("index", "home");
+            if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+            {
+                return Redirect(model.ReturnUrl);
+            }
+            else
+            {
+                return RedirectToAction("index", "home");
+            }
         }
 
 
         [HttpGet]
+    
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("login");
         }
-
-
-
     }
 }

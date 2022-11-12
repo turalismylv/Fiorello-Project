@@ -1,10 +1,12 @@
 ﻿using fiorello_project.DAL;
 using fiorello_project.ViewModels.Blog;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace fiorello_project.Controllers
 {
+    
     public class BlogController : Controller
     {
         private readonly AppDbContext _appDbContext;

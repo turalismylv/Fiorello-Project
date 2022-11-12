@@ -683,6 +683,9 @@ class="mkdf-woo-single-page home page-template page-template-full-width page-tem
 													</div>
 												</div>
 											</li>
+
+											@if (!User.Identity.IsAuthenticated)
+											{
 											<li id="nav-menu-item-90"
 												class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow">
 												<a asp-action="login" asp-controller="account" class=" current "><span class="item_outer"><span
@@ -706,6 +709,8 @@ class="mkdf-woo-single-page home page-template page-template-full-width page-tem
 													</div>
 												</div>
 											</li>
+												
+											}
 											<li id="nav-menu-item-704"
 												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub narrow">
 												<a href="#" class=""><span class="item_outer"><span
