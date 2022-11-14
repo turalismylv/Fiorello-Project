@@ -50,6 +50,7 @@ namespace fiorello_project.Areas.Admin.Controllers
                 ModelState.AddModelError("Title", "Bu adda blog movcuddur");
                 return View(model);
             }
+
             if (!_fileService.IsImage(model.MainPhoto))
             {
                 ModelState.AddModelError("MainPhoto", "File image formatinda deyil zehmet olmasa image formasinda secin!!");

@@ -75,6 +75,7 @@ namespace fiorello_project.Controllers
             }
 
             var result= await _signInManager.PasswordSignInAsync(user,model.Password, false,false);
+
             if (!result.Succeeded)
             {
                 ModelState.AddModelError(string.Empty, "Username or Password is incorrect");

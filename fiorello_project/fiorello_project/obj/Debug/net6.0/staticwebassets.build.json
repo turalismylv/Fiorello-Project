@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TkXVjadyi4F5/obYYQ8TeBHiNS6l1sSNf3t3r9DAol8=",
+  "Hash": "E6DZRqr5EXy3LpdvJ5PMEx3rRJAMeeMdtf0OhQfufXg=",
   "Source": "fiorello_project",
   "BasePath": "_content/fiorello_project",
   "Mode": "Default",
@@ -2990,6 +2990,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\fd564a01-8731-4c00-975a-f3206544b5e1_shop-1-gallery-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\js\\custom.js",
+      "SourceId": "fiorello_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\",
+      "BasePath": "_content/fiorello_project",
+      "RelativePath": "assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
       "Identity": "C:\\Users\\tursl\\OneDrive\\Desktop\\CODEACADEMY\\HomeWorks\\FIORELLO_project\\fiorello_project\\fiorello_project\\wwwroot\\assets\\js\\product-details.js",
